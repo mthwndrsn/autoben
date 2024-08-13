@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Benefit Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Automation Benefit Calculator</h1>
+        <form id="automationForm">
+            <div class="form-group">
+                <label for="manualTime">Time spent on manual process (hours per instance):</label>
+                <input type="number" id="manualTime" required>
+            </div>
+            <div class="form-group">
+                <label for="frequency">Frequency of the process (times per month):</label>
+                <input type="number" id="frequency" required>
+            </div>
+            <div class="form-group">
+                <label for="automatedTime">Time spent on automated process (hours per instance):</label>
+                <input type="number" id="automatedTime" required>
+            </div>
+            <div class="form-group">
+                <label for="hourlyRate">Hourly cost rate ($):</label>
+                <input type="number" id="hourlyRate" required>
+            </div>
+            <button type="button" onclick="calculateBenefits()">Calculate</button>
+        </form>
+        <div id="results" class="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
